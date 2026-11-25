@@ -16,9 +16,8 @@ with open("trades_test.csv","r") as file:
         cash = 10000
         restricted = ["ABC", "LMN"]
 
-        max_pct = 0.30
-
         holdings = [("XYZ", 50, 100), ("DEF", 20, 50)]
+        max_pct = 1 / (len(holdings) + 1)
 
         decision = "Approved"
         reason = "Trade passed all checks."
